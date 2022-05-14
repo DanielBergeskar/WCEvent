@@ -1,11 +1,12 @@
 package com.bergeskar.eventgui.entity;
 
 import javax.persistence.*;
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Date;
+
 @Entity
 @Table(name="customer")
 public class Customer {
@@ -24,7 +25,7 @@ public class Customer {
     @Basic
     @Column(name="b_date")
 
-    private String b_date;
+    private Date b_date;
     @Basic
     @Column(name="phone_nr")
     private String phone_nr;
@@ -32,7 +33,7 @@ public class Customer {
     public Customer(){
 
     }
-    public Customer(String f_name, String l_name, String b_date, String phone_nr){
+    public Customer(String f_name, String l_name, Date b_date, String phone_nr){
         this.f_name=f_name;
         this.l_name=l_name;
         this.b_date=b_date;

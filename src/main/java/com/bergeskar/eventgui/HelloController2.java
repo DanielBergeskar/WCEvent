@@ -13,9 +13,9 @@ import javafx.scene.control.cell.TextFieldTableCell;
 
 import javax.security.auth.callback.Callback;
 import java.net.URL;
+import java.sql.Date;
 import java.sql.Timestamp;
 import java.time.Instant;
-import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -34,7 +34,7 @@ public class HelloController2 implements Initializable {
     @FXML
     private TableColumn<Customer, String> l_nameColumn;
     @FXML
-    private TableColumn<Customer, Timestamp> b_dateColumn;
+    private TableColumn<Customer, Date> b_dateColumn;
     @FXML
     private TableColumn<Customer, String> phone_nrColumn;
     @FXML
